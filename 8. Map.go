@@ -29,4 +29,17 @@ func main() {
 	for _, chicken := range chickens {
 		fmt.Println(chicken["name"], chicken["gender"])
 	}
+	// Detection certain item in map
+	people := map[string]string{
+		"name":     "kibo",
+		"age":      "24",
+		"skill":    "golang, python",
+		"language": "indonesia, english",
+	}
+	value, isAxist := people["language"]
+	if isAxist {
+		fmt.Println(value)
+	} else {
+		fmt.Println("Not axist")
+	}
 }
